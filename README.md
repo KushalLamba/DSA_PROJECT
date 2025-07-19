@@ -17,13 +17,7 @@ A comprehensive C++ implementation of fundamental Data Structures, core Algorith
    - [Algorithms Included](#algorithms-included)  
    - [Implemented Scheduling Algorithms](#implemented-scheduling-algorithms)  
 3. [Complexity Analysis](#complexity-analysis)  
-4. [Getting Started](#getting-started)  
-   - [Prerequisites](#prerequisites)  
-   - [Build & Run](#build--run)  
-5. [Demo & Sample Output](#demo--sample-output)  
-6. [Extensibility](#extensibility)  
-7. [Contributing](#contributing)  
-8. [License](#license)  
+
 
 ---
 
