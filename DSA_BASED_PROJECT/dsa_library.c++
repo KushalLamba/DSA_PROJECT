@@ -453,27 +453,6 @@ public:
 // ==================== SORTING ALGORITHMS ====================
 class Sorting {
 public:
-    static void quickSort(vector<int>& arr, int low, int high) {
-        if (low < high) {
-            int pi = partition(arr, low, high);
-            quickSort(arr, low, pi - 1);
-            quickSort(arr, pi + 1, high);
-        }
-    }
-
-    static int partition(vector<int>& arr, int low, int high) {
-        int pivot = arr[high];
-        int i = low - 1;
-        
-        for (int j = low; j < high; j++) {
-            if (arr[j] < pivot) {
-                i++;
-                swap(arr[i], arr[j]);
-            }
-        }
-        swap(arr[i + 1], arr[high]);
-        return i + 1;
-    }
 
     static void mergeSort(vector<int>& arr, int left, int right) {
         if (left < right) {
@@ -609,12 +588,7 @@ int main() {
     cout << "Original array: ";
     for (int x : data1) cout << x << " ";
     cout << endl;
-    
-    Sorting::quickSort(data1, 0, data1.size() - 1);
-    cout << "Quick Sort result: ";
-    for (int x : data1) cout << x << " ";
-    cout << endl;
-    
+        
     Sorting::mergeSort(data2, 0, data2.size() - 1);
     cout << "Merge Sort result: ";
     for (int x : data2) cout << x << " ";
